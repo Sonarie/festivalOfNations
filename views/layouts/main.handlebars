@@ -14,9 +14,15 @@
         <nav>
           {{#if loggedIn}}
             <button id="logout" class="btn-no-style">logout</button>
+ sara/NEW-handlebar-structure
             <a href="/dashboard">See All Events - aka Dashboard</a>
             <a href="/login">login</a>
           {{else}}
+
+
+            <a href="/login">login</a>
+          {{else}}
+            <a href="/dashboard">See All Events</a>
 
           {{/if}}
         </nav>
@@ -35,9 +41,11 @@
       </footer>
     </div>
 
+
     {{#if loggedIn}}
       <script src="/javascript/logout.js"></script>
     {{/if}}
   </body>
+
 
 </html>

@@ -12,3 +12,5 @@ const sequelize = process.env.JAWSDB_URL
     });
 
 module.exports = sequelize;
+
+///This is a change to the file for merging
