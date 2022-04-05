@@ -1,5 +1,13 @@
 const router = require("express").Router();
 const { User, Post, Comment, Country } = require("../../models");
+const nodemailer = require('nodemailer');
+const sendgridTransport = require('nodemailer-sendgrid-transport');
+
+const transporter = nodemailer.createTransport(sendgridTransport({
+  auth: {
+    api_key: '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'
+  }
+}))
 
 // get all users
 router.get("/", (req, res) => {
@@ -74,6 +82,15 @@ router.post("/", (req, res) => {
         req.session.user_id = dbUserData.id;
         req.session.username = dbUserData.username;
         req.session.loggedIn = true;
+
+        //Send a Registration email
+        transporter.sendMail({
+          to: dbUserData.email,
+          from: "goodwinamundson@gmail.com",
+          subject: 'Welcome to Festival of Nations!',
+          html: `<p>Hello <b>${dbUserData.username}</b>, Signup Succesful!</p>`
+        })
+
 
         res.json(dbUserData);
       });
