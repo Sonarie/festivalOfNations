@@ -90,7 +90,7 @@ router.post("/", (req, res) => {
           to: dbUserData.email,
           from: "goodwinamundson@gmail.com",
           subject: 'Welcome to Festival of Nations!',
-          html: `<p>Hello <b>${dbUserData.username}</b>, Signup Succesful!</p>`
+          html: `<p>Hello <b>${dbUserData.username}</b>, Thank you for signing up for Festival of Nations!</p>`
         })
 
 
