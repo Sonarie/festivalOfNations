@@ -88,7 +88,7 @@ router.post("/", (req, res) => {
         //Send a Registration email
         transporter.sendMail({
           to: dbUserData.email,
-          from: "greenteam@protolabs.com",
+          from: "goodwinamundson@gmail.com",
           subject: 'Welcome to Festival of Nations!',
           html: `<p>Hello <b>${dbUserData.username}</b>, Signup Succesful!</p>`
         })
