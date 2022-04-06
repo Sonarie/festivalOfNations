@@ -3,9 +3,11 @@ const { User, Post, Comment, Country } = require("../../models");
 const nodemailer = require('nodemailer');
 const sendgridTransport = require('nodemailer-sendgrid-transport');
 
+const key = process.env.SECRET_API_KEY;
+
 const transporter = nodemailer.createTransport(sendgridTransport({
   auth: {
-    api_key: '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'
+    api_key: key,
   }
 }))
 
@@ -86,7 +88,7 @@ router.post("/", (req, res) => {
         //Send a Registration email
         transporter.sendMail({
           to: dbUserData.email,
-          from: "goodwinamundson@gmail.com",
+          from: "greenteam@protolabs.com",
           subject: 'Welcome to Festival of Nations!',
           html: `<p>Hello <b>${dbUserData.username}</b>, Signup Succesful!</p>`
         })
