@@ -3,7 +3,7 @@
   ![MIT](https://img.shields.io/badge/MIT-license-green)
 
   ### Description 
-  Protolabs is looking for a way for their employees to sign up for a Diversity Equity and Inclusion (DEI) event called Festival of Nations. Employees can create an account and sign in to a secure website where they can create a post showing which country they would like to represent at the festival. They will have to choose which protalabs campus they are located on and a brief description of what they plan to bring to the event. Participants can comment on each others post to collaborate and share ideas. All contributing posts are visible from the main events page.
+  Protolabs is looking for a way for their employees to sign up for a Diversity, Equity and Inclusion (DEI) event called Festival of Nations. Employees can create an account and sign in to a secure website where they can create a post showing which country they would like to represent at the festival. They will have to choose which Protolabs campus they are located on and a brief description of what they plan to bring to the event. Participants can comment on each others post to collaborate and share ideas. All contributing posts are visible from the main events page.
 
 
   ## Table of Contents
